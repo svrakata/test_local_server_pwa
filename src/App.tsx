@@ -6,7 +6,7 @@ const App = () => {
     const load = async () => {
         setLoading(true);
         try {
-            const res = await fetch("localhost:3000");
+            const res = await fetch("http://localhost:3000");
             const payload = await res.text();
             setResult(payload);
             setLoading(false);
